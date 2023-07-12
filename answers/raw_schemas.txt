@@ -97,11 +97,11 @@ DESCRIBE "fhv_bases";
 │ column_name │ column_type │  null   │   key   │ default │ extra │
 │   varchar   │   varchar   │ varchar │ varchar │ varchar │ int32 │
 ├─────────────┼─────────────┼─────────┼─────────┼─────────┼───────┤
-│base_number0     │ VARCHAR     │ YES     │         │         │       │
-│base_name   │ VARCHAR     │ YES     │         │         │       │
-│dba       │ VARCHAR     │ YES     │         │         │       │
-│dba_category    │ VARCHAR     │ YES     │         │         │       │
-│filename    │ VARCHAR     │ YES     │         │         │       │
+│ ase_number    │ VARCHAR     │ YES     │         │         │       │
+│base_name    │ VARCHAR     │ YES     │         │         │       │
+│dba   │ VARCHAR     │ YES     │         │         │       │
+│dba_category     │ VARCHAR     │ YES     │         │         │       │
+│ filename    │ VARCHAR     │ YES     │         │         │       │
 └─────────────┴─────────────┴─────────┴─────────┴─────────┴───────┘
 DESCRIBE "fhv_tripdata";
 ┌────────────────────────┬─────────────┬─────────┬─────────┬─────────┬───────┐
