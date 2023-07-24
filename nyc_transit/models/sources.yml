@@ -66,8 +66,13 @@ sources:
         columns:
           - name: station
             data_type: CHARACTER VARYING(256)
+            description: "Station ID"
+            tests:
+              - unique
+              - dbt_expectations.expect_column_to_exist
           - name: name
             data_type: CHARACTER VARYING(256)
+            description: "Name of the station"
           - name: date
             data_type: CHARACTER VARYING(256)
           - name: awnd
@@ -124,6 +129,9 @@ sources:
         columns:
           - name: column0
             data_type: CHARACTER VARYING(256)
+            tests:
+              - unique
+              - dbt_expectations.expect_column_to_exist
           - name: column1
             data_type: CHARACTER VARYING(256)
           - name: column2
@@ -137,6 +145,14 @@ sources:
         columns:
           - name: dispatching_base_num
             data_type: CHARACTER VARYING(256)
+            tests:
+              - not_null
+              - dbt_expectations.expect_column_to_exist
+              - relationships:
+                  to: source('main','fhv_bases')
+                  field: base_number 
+                  config:
+                    severity: warn             
           - name: pickup_datetime
             data_type: TIMESTAMP
           - name: dropoff_datetime
@@ -156,6 +172,7 @@ sources:
         columns:
           - name: hvfhs_license_num
             data_type: CHARACTER VARYING(256)
+            description: "license number"
           - name: dispatching_base_num
             data_type: CHARACTER VARYING(256)
           - name: originating_base_num
@@ -166,14 +183,24 @@ sources:
             data_type: TIMESTAMP
           - name: pickup_datetime
             data_type: TIMESTAMP
+            tests:
+              - not_null
+              - dbt_expectations.expect_column_to_exist          
           - name: dropoff_datetime
             data_type: TIMESTAMP
+            tests:
+              - not_null
+              - dbt_expectations.expect_column_to_exist
           - name: pulocationid
             data_type: BIGINT
           - name: dolocationid
             data_type: BIGINT
           - name: trip_miles
             data_type: DOUBLE
+            tests:
+              - dbt_expectations.expect_column_values_to_be_between:
+                  min_value: 0  
+                  max_value: 9999 
           - name: trip_time
             data_type: BIGINT
           - name: base_passenger_fare
@@ -198,6 +225,11 @@ sources:
             data_type: CHARACTER VARYING(256)
           - name: access_a_ride_flag
             data_type: CHARACTER VARYING(256)
+            tests:
+              - accepted_values:
+                  values: ['Y', 'N']
+                  config:
+                    severity: warn
           - name: wav_request_flag
             data_type: CHARACTER VARYING(256)
           - name: wav_match_flag
