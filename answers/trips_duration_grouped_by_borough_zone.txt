@@ -1,0 +1,62 @@
+┌───────────────┬────────────────────────────────┬────────────┬──────────────────────┐
+│    borough    │              zone              │ trip_count │ average_duration_sec │
+│    varchar    │            varchar             │   int64    │        double        │
+├───────────────┼────────────────────────────────┼────────────┼──────────────────────┤
+│ Bronx         │ Van Cortlandt Village          │      23847 │   1244.5253910345116 │
+│ Queens        │ Elmhurst/Maspeth               │      19840 │    1459.936743951613 │
+│ Queens        │ Long Island City/Queens Plaza  │      24337 │   1226.0789333114187 │
+│ Manhattan     │ Inwood                         │      49662 │   1130.0814506060972 │
+│ Brooklyn      │ South Williamsburg             │      39073 │   2024.8997005604892 │
+│ Bronx         │ Van Nest/Morris Park           │       9018 │   1172.7572632512752 │
+│ Manhattan     │ Inwood Hill Park               │      54099 │   1205.3777518992958 │
+│ Unknown       │ NA                             │      38502 │   1146.7677003792012 │
+│ Bronx         │ Norwood                        │      38152 │    993.1076221430069 │
+│ Bronx         │ Westchester Village/Unionport  │      49748 │    1057.504281579159 │
+│ Manhattan     │ Hamilton Heights               │      46147 │   1025.6019242854356 │
+│ Brooklyn      │ Red Hook                       │      22779 │    1224.457043768383 │
+│ Staten Island │ Westerleigh                    │      54737 │    1118.266912691598 │
+│ Brooklyn      │ Windsor Terrace                │      32010 │   1177.4941580756013 │
+│ Brooklyn      │ Manhattan Beach                │      35564 │   1115.4198065459454 │
+│ Bronx         │ Soundview/Bruckner             │      32723 │   1050.7878861962533 │
+│ Manhattan     │ Midtown South                  │      29081 │   1070.5309652350331 │
+│ Brooklyn      │ East Flatbush/Remsen Village   │      35931 │   1358.7747905708163 │
+│ Manhattan     │ Sutton Place/Turtle Bay North  │      47411 │    907.4680981206893 │
+│ Manhattan     │ Manhattan Valley               │      69062 │   1224.1697025860822 │
+│ Manhattan     │ Midtown Center                 │      41342 │    1133.157926563785 │
+│ Queens        │ Woodhaven                      │      19708 │   1091.2694337324945 │
+│ Bronx         │ Morrisania/Melrose             │      26934 │   1002.9304596420881 │
+│ Queens        │ Maspeth                        │      19634 │    1208.788173576449 │
+│ Manhattan     │ Highbridge Park                │      14038 │   1311.6328536828607 │
+│ Staten Island │ West Brighton                  │      11813 │   1666.1639718953695 │
+│ Manhattan     │ Upper East Side North          │      50300 │   1064.9433996023856 │
+│ Manhattan     │ Yorkville East                 │      16216 │   1117.3043907252097 │
+│ Queens        │ South Ozone Park               │      10929 │   1523.7403239088662 │
+│ Manhattan     │ World Trade Center             │      15977 │   1393.6687738624273 │
+│ Queens        │ Whitestone                     │      34882 │    1160.419643369073 │
+│ Queens        │ North Corona                   │      48378 │    1349.449274463599 │
+│ Unknown       │ NV                             │      23782 │   1461.6715583214195 │
+│ Manhattan     │ Washington Heights South       │      13978 │    973.4295321219058 │
+│ Manhattan     │ Little Italy/NoLiTa            │      13406 │   1590.7610025361778 │
+│ Manhattan     │ Stuy Town/Peter Cooper Village │      24068 │   1411.3751038723617 │
+│ Bronx         │ Williamsbridge/Olinville       │      35300 │   1035.9443626062323 │
+│ Queens        │ Steinway                       │      40840 │    911.9827375122429 │
+│ Bronx         │ West Farms/Bronx River         │       9678 │   1377.8580285182888 │
+│ Queens        │ Elmhurst                       │      12690 │    1074.718597320725 │
+│ Manhattan     │ Upper West Side South          │      19033 │   1412.7092943834393 │
+│ Bronx         │ Highbridge                     │       5974 │    1435.620187479076 │
+│ Queens        │ Woodside                       │      14362 │   1624.0775657986353 │
+│ Manhattan     │ West Village                   │      12775 │   1180.6316242661449 │
+│ Bronx         │ West Concourse                 │      41616 │    1054.651936755094 │
+│ Bronx         │ Mott Haven/Port Morris         │      30768 │    855.1682267290691 │
+│ Manhattan     │ Upper East Side South          │      54125 │    1028.441792147806 │
+│ Manhattan     │ Upper West Side North          │      37416 │   1189.0852843703228 │
+│ Manhattan     │ East Village                   │      20603 │   1276.0371790515944 │
+│ Bronx         │ Woodlawn/Wakefield             │      31751 │   1634.4670404081762 │
+│ Manhattan     │ Lincoln Square West            │      17278 │   1071.4722190068294 │
+│ Brooklyn      │ Sunset Park West               │      23314 │   1051.9671870978812 │
+│ Manhattan     │ Manhattanville                 │       3090 │   1070.6540453074433 │
+│ Manhattan     │ Two Bridges/Seward Park        │       1195 │    933.0719665271967 │
+│ Manhattan     │ Washington Heights North       │        539 │    703.9332096474953 │
+├───────────────┴────────────────────────────────┴────────────┴──────────────────────┤
+│ 55 rows                                                                  4 columns │
+└────────────────────────────────────────────────────────────────────────────────────┘
